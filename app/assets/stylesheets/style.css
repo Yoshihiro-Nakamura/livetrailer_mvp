@@ -1,0 +1,27 @@
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/19/Dublin_Philharmonic_Orchestra_performing_Tchaikovsky's_Symphony_No_4_in_Charlotte,_North_Carolina.jpg");
+  font-size: 80%;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+.concert-box ul {
+  width: 500px;
+}
+
+.concert-box ul li{
+  color: white;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  margin: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(64, 64, 64, 0.7)), to(rgba(13, 13, 13, 0.7)));
+}
+
+.concert-box ul li a{
+  color: white;
+  text-decoration: none;
+}
