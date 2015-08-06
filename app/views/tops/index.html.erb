@@ -1,6 +1,12 @@
 
-<div id="player"></div>
 
+<div id="song-box">
+  <div id="player"></div>
+  <div id="now-playing">
+    <p>
+    </p>
+  </div>
+</div>
 
 <div class="concert-box">
   <ul>
@@ -56,7 +62,13 @@
                 // play video
                 function onPlayerReady(e) {
                     console.log('onPlayerReady');
-                    $('.concert-box ul li:eq(0)').css('backgroundColor', 'rgba(70, 164, 242, 0.8)')
+                    $('.concert-box ul li:eq(0)').css('backgroundColor', 'rgb(7, 206, 250)')
+                    //ajax
+                    $.ajax({
+                      url: 'songs/search',
+                      type: 'GET',
+                      data: {videoId: videoList[playCount]}
+                    })
                 }
 
                 function error(e) {
@@ -81,6 +93,11 @@
                     player.playVideo();
                     $(".concert-box ul li" + ":eq("+playCount+")").css('backgroundColor', 'rgba(70, 164, 242, 0.8)');
                     console.log(playCount)
+                    $.ajax({
+                      url: 'songs/search',
+                      type: 'GET',
+                      data: {videoId: videoList[playCount]}
+                    })
                 }
 
                 // $('.concert-box ul li:eq(2)').css('backgroundColor', 'red');
