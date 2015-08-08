@@ -7,7 +7,7 @@ body {
 
 #song-box {
   float: left;
-  margin: 200px 50px 200px 200px;
+  margin: 200px 50px 200px 150px;
   padding: 30px 40px;
   border: 1px;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(64, 64, 64, 0.7)), to(rgba(13, 13, 13, 0.7)));
@@ -24,7 +24,7 @@ ul {
 
 .concert-box {
   float: right;
-  margin: 200px 200px 300px 200px;
+  margin: 200px 150px 300px 0px;
 }
 
 .concert-box ul {
